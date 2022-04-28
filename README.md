@@ -30,8 +30,12 @@ $ rails db:create
 ```bash
 $ rails s
 ```
-Open http://localhost:3000/ in your browser.
+Open http://localhost:3000/ in your browser
 
+### Run tests
+```bash
+$ bundle exec rspec
+```
 ## Authors
 
 👤 **Sahar Abdel Samad**
