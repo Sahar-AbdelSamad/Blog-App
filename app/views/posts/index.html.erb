@@ -1,1 +1,12 @@
-<h1>Index Posts</h1>
+<%= render @user %>
+
+<%@post.each do |post|%>
+<%= render post %>
+<div class='comments'>
+    <%post.most_recent_comments.each do |comment|%>
+    <p><%=post.author.name%>: <%=comment.text%></p>
+    <%end%>
+</div>
+<%end%>
+
+<button>Pagination</button>
