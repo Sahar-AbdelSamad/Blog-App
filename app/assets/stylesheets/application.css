@@ -14,41 +14,43 @@
  *= require_self
  */
 .sections {
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-    gap: 1rem; 
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  gap: 1rem;
 }
 
 .users {
-    width: 100%;
-    border: 1px black solid;
-    padding: 0 1rem;
+  width: 100%;
+  border: 1px black solid;
+  padding: 0 1rem;
 }
 
 span {
-    display: block;
-    text-align: end;
-    padding-bottom: 1rem;
+  display: block;
+  text-align: end;
+  padding-bottom: 1rem;
 }
 
- .posts, .comments, .bio {
-    border: 1px rgba(0, 0, 0, 0.39) solid;
-    padding: 0 1rem;
-    margin: 1rem;
- }
+.posts,
+.comments,
+.bio {
+  border: 1px rgba(0, 0, 0, 0.39) solid;
+  padding: 0 1rem;
+  margin: 1rem;
+}
 
- .bio {
-    border: 1px rgb(0, 0, 0) double;
-    margin-bottom: 2rem;
- }
+.bio {
+  border: 1px rgb(0, 0, 0) double;
+  margin-bottom: 2rem;
+}
 
- button {
-     margin: 1rem;
- }
+button {
+  margin: 1rem;
+}
 
- .post_comments {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
+.post_comments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
