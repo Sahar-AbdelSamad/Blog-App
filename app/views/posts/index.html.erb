@@ -1,4 +1,8 @@
+<button class="button">Back to user: <%= link_to @user.name, user_path(@user) %></button>
+
 <%= render @user %>
+
+<button class= "button"><%=link_to "Add new post", new_user_post_path %></button>
 
 <%@post.each do |post|%>
 <%= render post %>
@@ -8,5 +12,3 @@
     <%end%>
 </div>
 <%end%>
-
-<button>Pagination</button>
