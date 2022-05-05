@@ -1,0 +1,17 @@
+<button class="button"><%= link_to "Back to posts", user_posts_path %></button>
+
+<%= form_with(model: Post.new, url: user_posts_path, method: :post) do |f| %>
+  <p>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  </p>
+
+  <p>
+  <%= f.label :text %>
+  <%= f.text_area :text %>
+  </p>
+  <p>
+  <%= f.submit %>
+  </p>
+
+<% end %>
