@@ -1,14 +1,35 @@
+<button class= "button"><%= link_to "Back to posts", user_posts_path %></button>
+
 <div class="posts">
     <div class="post_comments">
         <h4><%=@post.title%> by: <%=@post.author.name%></h4>
         <span>Comments: <%=@post.comments_counter%>, Likes: <%=@post.likes_counter%></span>
     </div>
+
     <p><%=@post.text%></p>
+
+    <%= form_with(model: Like.new, url: post_likes_path(@post), method: :post ) do |f| %>
+    <p>
+      <%= f.submit "Like" %>
+    </p>
+    <% end %>
 </div>
 
 <div class= "comments">
     <%@comment.each do |comment|%>
         <p><%= comment.author.name %>: <%=comment.text%></p>
     <%end%>
+</div>
+
+<div class= "margin-left">
+  <%= form_with(model: Comment.new, url: post_comments_path(@post), method: :post ) do |f| %>
+  <h3>Add a new Comment</h3>
+  <p>
+    <%= f.text_field :text %>
+    </p>
+    <p>
+    <%= f.submit %>
+  </p>
+<% end %>
 </div>
         
