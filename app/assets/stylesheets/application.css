@@ -40,17 +40,41 @@ span {
   margin: 1rem;
 }
 
+.posts {
+  margin-bottom: 0.2rem;
+  margin-top: 2rem;
+}
+
+.comments {
+  margin-top: 0;
+}
+
 .bio {
   border: 1px rgb(0, 0, 0) double;
   margin-bottom: 2rem;
-}
-
-button {
-  margin: 1rem;
 }
 
 .post_comments {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.margin-left,
+.add-post {
+  margin-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  background-color: #bebdbd;
+  border-radius: 5px;
+  font-size: 17px;
+  border: 1px solid #bebdbd;
+  margin-left: 1rem;
 }
