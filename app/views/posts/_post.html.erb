@@ -2,6 +2,6 @@
         <%= link_to user_post_path(post.author_id, post.id) do %>
                 <h4><%=post.title%></h4>
         <%end%>
-        <p><%=post.text%></p>
+        <p><%=post.text.split("\n").first%></p>
         <span>Comments: <%=post.comments_counter%>, Likes: <%=post.likes_counter%></span>
 </div>
