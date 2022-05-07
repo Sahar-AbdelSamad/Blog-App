@@ -8,9 +8,11 @@ class CommentsController < ApplicationController
     @comment.post_id = params[:post_id]
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to user_post_path(@comment.author_id, @comment.post_id) }
+        format.html do
+          redirect_to user_post_path(@comment.author_id, @comment.post_id), notice: 'Comment was successfully created.'
+        end
       else
-        format.html { render :new }
+        format.html { render :new, error: 'Failed to create comment' }
       end
     end
   end

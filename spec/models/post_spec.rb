@@ -12,7 +12,7 @@ RSpec.describe Post, type: :model do
     end
 
     it 'title should not have length>250' do
-      post.title = 'a'*260
+      post.title = 'a' * 260
       expect(post).to_not be_valid
     end
   end
@@ -42,9 +42,9 @@ RSpec.describe Post, type: :model do
   end
 
   context '#most_recent_comments' do
-    before(:each) do 
+    before(:each) do
       6.times do |i|
-        Comment.new(text: "Comment #{i}", post_id: post.id) 
+        Comment.new(text: "Comment #{i}", post_id: post.id)
       end
     end
 
