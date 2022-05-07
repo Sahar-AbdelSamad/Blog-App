@@ -2,13 +2,10 @@
 <button class="button"><%= link_to "Back to posts", user_posts_path %></button>
 
 <%= form_with(model: Post.new, url: user_posts_path, method: :post) do |f| %>
-<% if @post.errors.any? %>
-      <% @post.errors.full_messages.each do |message| %>
-        <div role="alert">
-          <%= message %> 
-        </div>
-      <% end %>
-    <% end %>
+  <% if flash[:error] %>
+    <p><%= flash[:error]%> </p>
+  <% end %>
+
   <p>
   <%= f.label :title %>
   <%= f.text_field :title %>

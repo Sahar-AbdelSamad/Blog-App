@@ -12,7 +12,8 @@ class CommentsController < ApplicationController
           redirect_to user_post_path(@comment.author_id, @comment.post_id), notice: 'Comment was successfully created.'
         end
       else
-        format.html { render :new, error: 'Failed to create comment' }
+        flash[:error] = 'Failed to create comment'
+        format.html { render :new }
       end
     end
   end
