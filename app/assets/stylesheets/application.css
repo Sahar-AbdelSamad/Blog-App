@@ -89,11 +89,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 60vw;
+  max-width: 80vw;
+  margin: auto;
 }
 
 .container {
-  display: flex;
   justify-content: start;
   margin: 1rem 0;
 }
@@ -104,10 +104,42 @@ button {
 
 .field {
   margin: 0.5rem 0;
+  width: 100%;
 }
 
 .w-100 {
   width: 97%;
+}
+
+.new_user {
+  width: 100%;
+}
+
+.title-w80 {
+  width: 80vw;
+  margin: auto;
+}
+
+.bottom-links {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-links > a{
+  border: 2px solid black;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.bottom-links > a:hover {
+  box-shadow: 10px 5px 5px black;
+}
+
+.sign-box {
+  border: 2px solid black;
+  width: 100%;
 }
 
 .navbar {

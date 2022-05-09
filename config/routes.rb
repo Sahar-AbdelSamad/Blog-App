@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   devise_scope :user do
     get '/sign_out', to: 'users/sessions#destroy'
+    get '/sign_up', to: 'users/registrations#new'
+    get '/login', to: 'users/sessions#new'
   end
 
   resources :users, only: [:index, :show] do
