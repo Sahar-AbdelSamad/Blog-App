@@ -94,9 +94,46 @@ button {
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  margin: 1rem 0;
 }
 
 .sign-title {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.field {
+  margin: 0.5rem 0;
+}
+
+.w-100 {
+  width: 97%;
+}
+
+.navbar {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  border: 2px solid black;
+  font-weight: bolder;
+  border-radius: 6px;
+  padding: 0.3rem;
+  margin: 0 0.3rem;
+}
+
+.nav-btn:hover {
+  border-color: blue;
+}
+
+.nav-title {
+  font-weight: bolder;
+  margin: 0;
+}
+
+.inner-cont {
+  display: flex;
+  align-items: center;
 }

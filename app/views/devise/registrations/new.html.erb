@@ -7,12 +7,12 @@
     
       <div class="field">
         <%= f.label :name %><br />
-        <%= f.text_field :name, autocomplete: "name" %>
+        <%= f.text_field :name, class: 'w-100', autocomplete: "name" %>
       </div>
     
       <div class="field">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.email_field :email, class: 'w-100', autofocus: true, autocomplete: "email" %>
       </div>
     
       <div class="field">
@@ -20,12 +20,12 @@
         <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password" %>
+        <%= f.password_field :password, class: 'w-100', autocomplete: "new-password" %>
       </div>
     
       <div class="field">
         <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        <%= f.password_field :password_confirmation, class: 'w-100', autocomplete: "new-password" %>
       </div>
     
       <div class="actions">
@@ -34,7 +34,7 @@
     <% end %>
   
   </div>
-
+  <%= link_to "Home Page", users_path, :method => :get %> 
 </div>
 
 
