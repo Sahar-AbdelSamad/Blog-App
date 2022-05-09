@@ -1,6 +1,16 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: { registrations: 'users/registrations', sessions: 'users/sessions', passwords: 'users/passwords'} 
+  devise_for :users, path_names: { 
+    sign_in: 'login', 
+    sign_out: 'logout', 
+    password: 'secret', 
+    confirmation: 'verification', 
+    unlock: 'unblock', 
+    registration: 'register', 
+    sign_up: 'sign_up'
+  }
+  # devise_for :users, controllers: { registrations: 'users/registrations', sessions: 'users/sessions', passwords: 'users/passwords'} 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
   devise_scope :user do
     get '/sign_out', to: 'users/sessions#destroy'
     get '/sign_up', to: 'users/registrations#new'

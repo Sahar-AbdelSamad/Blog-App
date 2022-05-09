@@ -1,4 +1,4 @@
-<h2 class="sign-title">Sign up</h2>
+<h2 class="title-w80 sign-title">Sign up</h2>
 
 <div class="container">
   <div class="black-border sign-up">
@@ -34,8 +34,10 @@
     <% end %>
   
   </div>
-  <%= link_to "Home Page", users_path, :method => :get %> 
+  
 </div>
 
-
-<%= render "devise/shared/links" %>
+<div class="bottom-links">
+  <%= link_to "Home Page", users_path, :method => :get %> 
+  <%= render "devise/shared/links" %>
+</div>
