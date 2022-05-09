@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
-  
+  devise_for :users, controllers: { registrations: 'users/registrations', sessions: 'users/sessions', passwords: 'users/passwords'} 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  devise_scope :user do
+    get '/sign_out', to: 'users/sessions#destroy'
+  end
 
   resources :users, only: [:index, :show] do
     resources :posts, only: [:index, :new, :create, :show]

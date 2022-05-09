@@ -1,3 +1,4 @@
 <% @user.each do |user| %>
     <%= render user %>
 <%end%>
+<%= link_to "Sign out", destroy_user_session_path, :method => :delete %> 
