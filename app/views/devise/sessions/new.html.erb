@@ -3,7 +3,7 @@
 
 <div class="container">
   <div class="black-border sign-up">
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { "data-turbo": "false"  }) do |f| %>
       <div class="field">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, class: 'sign-box', placeholder: 'Email', autocomplete: "email" %>
