@@ -78,3 +78,94 @@ button {
   border: 1px solid #bebdbd;
   margin-left: 1rem;
 }
+
+.black-border {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.container {
+  justify-content: start;
+  margin: 1rem 0;
+}
+
+.sign-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.field {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.w-100 {
+  width: 97%;
+}
+
+.new_user {
+  width: 100%;
+}
+
+.title-w80 {
+  width: 80vw;
+  margin: auto;
+}
+
+.bottom-links {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-links > a {
+  border: 2px solid black;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.bottom-links > a:hover {
+  box-shadow: 10px 5px 5px black;
+}
+
+.sign-box {
+  border: 2px solid black;
+  width: 100%;
+}
+
+.navbar {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  border: 2px solid black;
+  font-weight: bolder;
+  border-radius: 6px;
+  padding: 0.3rem;
+  margin: 0 0.3rem;
+}
+
+.nav-btn:hover {
+  border-color: blue;
+}
+
+.nav-title {
+  font-weight: bolder;
+  margin: 0;
+}
+
+.inner-cont {
+  display: flex;
+  align-items: center;
+}

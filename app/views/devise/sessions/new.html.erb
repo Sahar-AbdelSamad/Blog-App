@@ -1,0 +1,32 @@
+<h2 class="title-w80 sign-title">Log in</h2>
+
+
+<div class="container">
+  <div class="black-border sign-up">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { "data-turbo": "false"  }) do |f| %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, class: 'w-100', placeholder: 'Email', autocomplete: "email" %>
+      </div>
+    
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, class: 'w-100', placeholder: 'Password', autocomplete: "current-password" %>
+      </div>
+    
+      <% if devise_mapping.rememberable? %>
+        <div class="field">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end %>
+      <div class="actions">
+        <%= f.submit "Log in" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="bottom-links">
+  <%= render "devise/shared/links" %>
+</div>
