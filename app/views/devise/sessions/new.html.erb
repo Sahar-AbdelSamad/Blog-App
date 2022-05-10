@@ -6,12 +6,12 @@
     <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { "data-turbo": "false"  }) do |f| %>
       <div class="field">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, class: 'sign-box', placeholder: 'Email', autocomplete: "email" %>
+        <%= f.email_field :email, autofocus: true, class: 'w-100', placeholder: 'Email', autocomplete: "email" %>
       </div>
     
       <div class="field">
         <%= f.label :password %><br />
-        <%= f.password_field :password, class: 'sign-box', placeholder: 'Password', autocomplete: "current-password" %>
+        <%= f.password_field :password, class: 'w-100', placeholder: 'Password', autocomplete: "current-password" %>
       </div>
     
       <% if devise_mapping.rememberable? %>
@@ -26,6 +26,7 @@
     <% end %>
   </div>
 </div>
+
 <div class="bottom-links">
   <%= render "devise/shared/links" %>
 </div>
