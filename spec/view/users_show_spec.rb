@@ -12,10 +12,14 @@ RSpec.describe 'Users', type: :system do
                         photo: 'https://cdn.eso.org/images/thumb700x/eso0907a.jpg',
                         password: '123123', email: 'u@i', confirmed_at: Time.now)
 
-      @p1 = Post.create(id: 1, title: 'post1', comments_counter: 0, likes_counter: 0, author_id: @u1.id, text: 'a generation lost in space')
-      @p2 = Post.create(id: 2, title: 'post2', comments_counter: 0, likes_counter: 0, author_id: @u1.id, text: 'no angel born in hell')
-      @p3 = Post.create(id: 3, title: 'post3', comments_counter: 0, likes_counter: 0, author_id: @u1.id, text: 'the day the music died')
-      @p4 = Post.create(id: 4, title: 'post4', comments_counter: 0, likes_counter: 0, author_id: @u1.id, text: 'bye, bye, miss american pie')
+      @p1 = Post.create(id: 1, title: 'post1', comments_counter: 0, likes_counter: 0, author_id: @u1.id,
+                        text: 'a generation lost in space')
+      @p2 = Post.create(id: 2, title: 'post2', comments_counter: 0, likes_counter: 0, author_id: @u1.id,
+                        text: 'no angel born in hell')
+      @p3 = Post.create(id: 3, title: 'post3', comments_counter: 0, likes_counter: 0, author_id: @u1.id,
+                        text: 'the day the music died')
+      @p4 = Post.create(id: 4, title: 'post4', comments_counter: 0, likes_counter: 0, author_id: @u1.id,
+                        text: 'bye, bye, miss american pie')
     end
     before(:each) do
       visit new_user_session_path
