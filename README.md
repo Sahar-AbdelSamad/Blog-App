@@ -44,7 +44,11 @@ $ bundle exec rspec
 - Twitter: [@abdelsamadsahar](https://twitter.com/AbdelSamadSahar)
 - LinkedIn: [sahar-abdel-samad](https://www.linkedin.com/in/sahar-abdel-samad/)
 
+👤 David Vergaray
 
+- GitHub:   [@Yothu](https://github.com/Yothu)
+- Twiter:   [@Daivhy](https://twitter.com/Daivhy)
+- LinkedIn: [David Vergaray](https://www.linkedin.com/in/david-vergaray-almontes-051a11127/)
 
 ## 🤝 Contributing
 
